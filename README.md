@@ -77,6 +77,27 @@ POST /evaluate
 POST /roles
 ```
 
+## Architecture
+
+![RBAC Architecture](architecture.png)
+
+## System Design
+
+The platform follows a centralized authorization model.
+
+### Components
+
+- Authentication Service
+- Authorization Engine
+- Role Management
+- Policy Management
+- Permission Evaluation
+- Multi-Tenant Configuration
+
+### Authorization Flow
+
+User → JWT Validation → Role Lookup → Policy Evaluation → Access Decision
+
 ## Future Enhancements
 
 - ABAC Support
